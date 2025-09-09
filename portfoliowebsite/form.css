@@ -1,0 +1,49 @@
+/* Contact section styles */
+
+/* styles for contact section and form elements */
+
+/* container for contact information */
+.contact-container {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3a8bfd;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px;
+    transition: all 0.3s ease;
+    min-width: 200px;
+}
+
+.contact:hover {
+    background-color: #2366b8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(58,139,253,0.2);
+}
+
+.contact-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 10px auto;
+    }
+    
+    .contact-container h4 {
+        padding: 0 20px;
+    }
+}

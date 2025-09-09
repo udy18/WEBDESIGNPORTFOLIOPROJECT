@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- main html document for portfolio website -->
+<html>
+<head>    
+    <!-- meta information and stylesheets -->
+    <meta charset="UTF-8" />
+    <title>Uthkarsh Srinivasan's Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timeline.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>    
+    <!-- navigation bar -->
+    <div class="topnav">
+        <a href="#Header"><div class="logo"><i>UDY</i></div></a>
+        
+        <ul class="nav-links">
+            <li><a href="#Aboutme">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Contact">Contact Me</a></li>
+        </ul>
+    </div>
+
+
+<!--Header Section-->
+<div class="main-hero" id="Header">
+  <div class="hero-left">
+    <img src="images/fuji.png" alt="Uthkarsh photo" class="main-photo" width="100%">
+  </div>
+  <div class="hero-right">
+    <div style="display: flex; align-items: center; gap: 18px;">
+      <div class="blue-dot"></div>
+      <div>
+        <h1 style="margin-bottom: 0;">WELCOME TO MY PORTFOLIO PAGE</h3>
+        <h4 style="margin-top: 6px;">Software Developer | Web Enthusiast | Machine Learning Aficionado</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--About Me Section-->
+<div class="main-hero" id="Aboutme">
+<div class="section">
+     <div class="hero-left">
+      <h1>ABOUT ME</h1>
+      <h4>Hi, I'm Uthkarsh Srinivasan — a passionate software developer with a strong foundation in web development and machine learning. I enjoy building practical and impactful solutions, whether it's through clean, responsive web interfaces or smart predictive models. I'm always eager to learn new technologies and contribute to exciting, meaningful projects.</h4>
+    </div>
+  <div class="hero-right">
+    <img src="images/violin.jpg" alt="Uthkarsh about me photo" class="main-photo">
+  </div>
+  </div>
+</div></div>
+
+<!--Projects Section-->
+<div class="main-hero" id="Projects">
+    <div class="section">  <h1>Projects</h1>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <a href="https://github.com/udy18/alertapp"><img src="images/slide1.png" style="width:100%" alt="Project 1"></a>
+      <div class="caption">Project 1 - A web application that helps users to alert during emergency situations.</div>
+    </div>
+    <div class="slide fade">
+      <a href="https://z124493-uthkarsh-srinivasan.github.io/wdpweek5homework/part1/"><img src="images/quote.png" style="width:100%" alt="Project 2"></a>
+      <div class="caption">Project 2 - A website made for generating random quotes.</div>
+    </div>
+    <div class="slide fade">
+      <a href="https://z124493-uthkarsh-srinivasan.github.io/wdpweek5homework/part2/"><img src="images/quizapp.png" style="width:100%" alt="Project 3"></a>
+      <div class="caption">Project 3 - A quizzing website to test your skills on web design.</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="dots-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+</div>
+<div class="main-hero reverse">
+<!--Experience Section-->
+<div class="section" id="Experience">  <h1>Experience</h1>
+  <div class="experience-container">
+    <div class="experience-box">
+      <h3>Data Science Intern
+ATSUYA Technologies  (Aug 2023 – Jun 2024)</h3>
+      <ul>
+        <li>Built custom Computer Vision & 3D image processing models 
+            using KerasOCR, OpenCV, and Open3D</li>
+
+<li>Reduced OCR pipeline time by 65%, optimizing performance for a major client</li>
+
+<li>Developed robust preprocessing workflows for image and point cloud data</li>
+      </ul>
+    </div>
+    <div class="experience-box">
+      <h3>Research Intern
+ELC Labs   (Jul 2023 – Aug 2023)</h3> 
+
+      <ul>
+        <li> Explored Large Language Models (LLMs), transformer architectures, and fine-tuning strategies</li>
+
+<li> Conducted deep literature reviews and dataset evaluations for research applications</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<!--Education Section-->
+<div class="main-hero" id="Education">
+    <div class="hero-left">
+    <h1>EDUCATION</h1>
+    <p style="color:white">From earning my high school diploma at Chettinad Vidyashram in 2021 
+        to pursuing a Bachelor's degree in Computer Science & Engineering (AI & ML), 
+        my academic path reflects a deep passion for technology and innovation. In 2025, 
+        I had the incredible opportunity to expand my global perspective through a 
+        student exchange program at Shibaura Institute of Technology in Japan. 
+        Each milestone has shaped my skills, broadened my worldview, 
+        and fueled my ambition to build impactful tech solutions.</p>
+  </div>
+  <div class="hero-right">
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>2021</h2>
+          <p>High school Diploma From Chettinad Vidyashram, Chennai,India</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2025</h2>
+          <p>🌏 Student Exchange Program at  
+Shibaura Institute of Technology, Japan</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>2026</h2>
+          <p>🎓 Bachelor's in Computer Science & Engineering (AI & ML) from
+     Hindustan Institute of Technology and Science</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Contact Section-->
+<div class="main-hero" id="Contact">
+  <div class="hero-left">
+    <h1>CONTACT ME</h1>
+    <img src="images/mypic.jpg" alt="Uthkarsh photo" class="main-photo">
+  </div>
+  <div class="hero-right">
+    <div class="contact-container">
+      <h3 style="color:white">Feel free to reach out to me at:</h3>
+             <a href="mailto:z124493@shibaura-it.ac.jp" class="contact">
+        <span class="contact-text">uthkarsh.srinivasan@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/uthkarsh-s/" class="contact">
+        <span class="contact-text">Linkedin</span>
+      </a>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

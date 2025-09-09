@@ -1,0 +1,115 @@
+/* styles for projects slideshow component */
+
+/* main slideshow container */
+.slideshow-container {
+  position: relative;
+  max-width: 800px;  
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  background: #181f2a;
+}
+
+.slide {
+  display: none;
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;  
+  object-fit: cover;  
+  border-radius: 8px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 36px;
+  margin-top: -18px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.35);
+  border: none;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+  background: #2d3a4a;
+}
+
+.caption {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 10px 16px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(0deg, rgba(24,31,42,0.95) 60%, rgba(24,31,42,0.2) 100%);
+  border-radius: 0 0 18px 18px;
+}
+
+.dots-container {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s, transform 0.2s;
+  border: 2px solid #222b3a;
+}
+
+.dot.active {
+  background-color: #3a8bfd;
+  transform: scale(1.2);
+  border-color: #3a8bfd;
+  box-shadow: 0 0 8px #3a8bfd55;
+}
+
+.dot:not(.active):hover {
+  background-color: #7fa7e6;
+}
+
+#Projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#Projects h1 {
+  margin-bottom: 30px;
+}
